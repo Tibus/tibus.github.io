@@ -131,7 +131,7 @@ footer{
     text-decoration: none;}
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 40rem), print {
   main{
     margin-bottom: 0px;}
 
@@ -157,7 +157,7 @@ footer{
     margin: 0;}
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48rem), print {
   main{
     margin-bottom: 0px;}
 
@@ -181,4 +181,10 @@ footer{
     padding: 3em;
     margin: 5em auto 10em;
     width: 800px;}
+}
+
+@media print{
+  footer{
+    display: none;
+  }
 }
