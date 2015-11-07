@@ -12,7 +12,7 @@ body {
 
 .page{
   position: relative;
-  padding: 1em;
+  padding: 3em;
   overflow: hidden;
   background-color: $page-color-bottom;
 
@@ -21,7 +21,7 @@ body {
     position: absolute;
     height: 500px;
     width: 200%;
-    top: -100px;
+    top: -220px;
     left: -70%;
     z-index: 5;
     background: $page-color-top;
@@ -32,7 +32,7 @@ body {
 main{
   position: relative;
   z-index: 10;
-  margin-bottom: 220px;}
+  margin-bottom: 170px;}
 
 h1 {
   margin: 0.67em 0;
@@ -49,58 +49,29 @@ h2{
   font-size: 1.5em;
   text-align: center;}
 
-section{
-  h3{
-    margin: 0.75em 0 0.25em 0;
-    font-size: 1.5em;
-    font-weight: normal;
+h3{
+  margin: 0.75em 0 0.25em 0;
+  font-size: 1.5em;
+  font-weight: normal;
 
-    &::before{
-      content: "*";
-      margin-right: 0.1em;
-      color:$dark-blue-color;
-      font-weight: 900;}
-  }//h3
-
-  h4{
-    margin: 0;
-    font-weight: normal;
-    font-size: 1em;
-
-    p{
-      font-weight: normal;}
-  }
-
-  .content{
-    margin: 0 0 0 1.5em;
-    padding: 0;}
-
-  ol{
-    margin: 0;
-    list-style: none;
-
-    li{
-      margin: 0 0 0.5em;}
-  }
+  &::before{
+    content: "*";
+    margin-right: 0.1em;
+    color:$dark-blue-color;
+    font-weight: 900;}
 
   a{
-    color: $dark-blue-color;
+    color:black;
     text-decoration: none;
-    font-weight: bold;}
+    border-bottom: 1px solid black;
 
-  p{
-    margin: 0  0 0.1em 1.5em;
-    text-indent: -1em;
-    font-weight: lighter;}
+    &:hover{
+      border-bottom: 2px solid black;}
+  }
+}//h3
 
-  &#identity p{
-    margin: 0;
-    text-indent: 0;}
-
-  dd{
-    margin: 0 0 0.3em 0.5em;
-    padding: 0;
-    font-weight: lighter;}
+section{
+  margin-top: 2em;
 }
 
 footer{
@@ -123,54 +94,41 @@ footer{
     text-decoration: none;}
 }
 
+@media screen and (min-width: 30rem) {
+  body{
+    background-color:$background-color;
+    margin-top: 2em;}
+
+  h1{
+    margin: 0;
+    text-align: left;
+    font-size: 3em;
+    font-weight: lighter;}
+
+  h2{
+    margin: 0 0 1em;
+    text-align: left;}
+
+  figure{
+    float: left;
+    margin-top: 0;}
+}
+
 @media screen and (min-width: 40rem) {
   main{
     margin-bottom: 0px;}
 
-  header{
-    margin-right: 240px;}
-
   h1{
-    margin: 0;
-    padding: 0.5em 0 0;
-    width: 100%;
-    font-size: 5em;
-    font-weight: lighter;
-    text-align: right;
-    line-height: 1em;}
-
-  h2{
-    text-align: left;}
-
-  figure{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 0;}
+    font-size: 5em;}
 }
 
 @media screen and (min-width: 48rem) {
   main{
     margin-bottom: 0px;}
 
-  .page{
-    padding: 2em;}
-
-  section.col{
-    float: left;
-    width: 31%;
-    margin-right: 2.333%;}
-
-  section#others{
-    clear: both;}
-}
-
-@media screen and (min-width: 60rem) {
-  body{
-    background-color:$background-color;}
 
   .page{
     padding: 3em;
     margin: 5em auto 10em;
-    width: 800px;}
+    width: 600px;}
 }
