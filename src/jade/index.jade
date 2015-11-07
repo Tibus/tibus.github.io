@@ -1,0 +1,308 @@
+doctype html
+html( lang="fr-BE" )
+  head
+    meta( charset="UTF-8" )/
+    title Delnatte Julien
+
+    meta( name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0" )/
+
+    link( rel="stylesheet", href="assets/styles.min.css" )/
+
+    // Twitter Card
+    meta( property="twitter:card", content="summary" )/
+    meta( property="twitter:title", content="Delnatte Julien" )/
+    meta( property="twitter:description", content="Site internet de Julien Delnatte" )/
+    meta( property="twitter:image", content="http://julien.delnatte.be/assets/juliendelnatte.jpg" )/
+    meta( property="twitter:creator", content="@juliendelnatte" )/
+
+    // Facebook OpenGraph
+    meta( property="og:type", content="profile" )/
+    meta( property="og:title", content="Delnatte Julien" )/
+    meta( property="og:site_name", content="julien.delnatte.be" )/
+    meta( property="og:description", content="Site internet de Julien Delnatte" )/
+    meta( property="og:image", content="http://julien.delnatte.be/assets/juliendelnatte.jpg" )/
+    meta( property="og:locale", content="fr_BE" )/
+
+    <!--[if lt IE 9]>
+    script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
+    <![endif]-->
+
+  body
+    .page
+      main
+        header
+          h1
+            | Delnatte
+            br/
+            = " "
+            | Julien
+
+        figure
+          img( alt="Julien Delnatte", src="assets/juliendelnatte.jpg" )
+          
+        h2 
+          | Développeur full-stack et électronicien
+          
+        section#identity
+          h3 Identité
+          .content
+            p Né le 15 juin 1990
+            p.phone
+              strong Tel : 
+              a( href="tel:+32472786675" ) 0032 472 78 66 75
+            p.mail
+              strong Mail : 
+              a( href="mailto:julien.delnatte@gmail.com" ) julien.delnatte@gmail.com
+            p.site
+              strong URL : 
+              a( href="http://www.tibus.be", rel="external" ) http://www.tibus.be
+
+        section#studies
+          h3 Cursus
+          ol.content
+            li
+              h4 
+                time( datetime="2008-09-01" ) 2008 
+                | - 
+                time( datetime="2011-06-30" ) 2011 
+              p
+                | Graduat en Techniques Infographiques à la Haute Ecole de la Province de Liège ( Bac +3 )
+
+              p.description
+                | PFE : Réalisation d'un jeux vidéo 3D temps-réel sur Facebook (BuroCrazy).
+              p.skills
+                | (Maya, AS3, Flash, MySQL, PHP, HTML5, CSS, Javascript,...)
+            
+            li
+              h4 
+                time( datetime="2006-09-01" ) 2006 
+                | - 
+                time( datetime="2008-06-30" ) 2008 
+              p
+                | 5
+                sup ème
+                | et 6
+                sup ème
+                | secondaires : Qualification en Infographie à l’Institut St-Luc Liège
+            li
+              h4 
+                time( datetime="2006-09-01" ) 2006 
+                | - 
+                time( datetime="2008-06-30" ) 2008 
+              p
+                | Humanités générales : D.I.C. Collège Liège
+                
+        section#distinctions
+          h3 Distinctions
+          ol.content
+            li
+              h4 
+                time( datetime="2011-06-30" ) 2011 
+              p
+                | Graduat obtenu avec Grande Distinction, prix du Collège Provincial de Liège et prix Fernand Petit
+            
+            li
+              h4 
+                time( datetime="2008-06-30" ) 2008 
+              p
+                | Qualification en infographie à l’Institut St-Luc obtenue avec mention et félicitations du Jury
+                
+        section#parcours
+          h3 Expériences
+          ol.content
+            li
+              h4 
+                .time 
+                  time( datetime="2015-01-01" ) Janvier 2015 
+                  | - 
+                  | en poste
+                p
+                  | Développeur full-stack et électronicien chez 
+                  a( href="http://www.neotrope.fr/", rel="external" ) Néotrope
+                  | ( Lille, France )
+              p.description
+                | Création et développement d’un bracelet capteur d’émotions en bluetooth. 
+                | Réalisation des cartes électroniques, soudures, services web, serveur de récupération des données en temps réel, applications mobiles, firmware, form-factor en 3D,... 
+              p.skills
+                | (Objective-C, Swift, Node-js, Mqtt, Electron, HTML5, CSS, Javascript, C, C++, Eagle,...)
+            
+            li
+              h4 
+                .time 
+                  time( datetime="2012-09-01" ) Septembre 2012 
+                  | - 
+                  time( datetime="2014-12-30" ) Décembre 2014 
+                p
+                  | Développeur de jeux vidéo chez 
+                  a( href="https://www.ubisoft.com/", rel="external" ) Ubisoft 
+                  | ( Lille/Paris, France )
+
+              p.description
+                | Membre de l’équipe de développement du jeu «Ozen»
+              p.skills
+                | (AS3/Flex, Air, JSFL, C++,...)
+                
+            li
+              h4 
+                .time 
+                  time( datetime="2011-12-30" ) Décembre 2011
+                  | - 
+                  time( datetime="2012-08-30" ) Août 2012
+                p
+                  | Développeur multimédia chez 
+                  a( href="http://www.kylii-motion.com/", rel="external" ) Kylii motion
+                  | ( Lille, France )
+
+              p.description
+                | Développement de jeux en 3D et d’un sdk Flex/AS3/Kinect pour bornes intéractives.
+              p.skills
+                | (AS3/Flex, Air, shell, HTML5, CSS, Javascript, C++, sockets, 3DS-Max,...)
+                
+            li
+              h4 
+                .time 
+                  time( datetime="2011-07-01" ) Juillet
+                  | - 
+                  time( datetime="2011-12-30" ) Décembre 2011
+                p
+                  | Développeur multimédia chez 
+                  a( href="http://www.v-cult.com/", rel="external" ) V-Cult 
+                  | ( Lille, France )
+
+              p.description
+                | Développement et intégration intégrale d’applications sur Facebook
+              p.skills
+                | ( AS3/Flex, PHP, Mysql, javascript,... )
+                
+            li
+              h4 
+                .time 
+                  time( datetime="2011-02-01" ) Février
+                  | - 
+                  time( datetime="2011-05-30" ) Mai 2011
+                p
+                  | Stage de fin d’étude chez 
+                  a( href="http://www.v-cult.com/", rel="external" ) V-Cult 
+                  | ( Lille, France )
+
+              p.description
+                | Modélisation/Skinning et Développement des UV de personnages pour «Beloola»
+              p.description
+                | Développement et intégration d’un quizz musical sur Facebook
+              p.skills
+                | ( 3DS-Max, AS3, PHP, Mysql, javascript,... )
+            
+            li
+              h4 
+                .time 
+                  time( datetime="2008-07-15" ) Juillet
+                  | - 
+                  time( datetime="2008-08-15" ) Aout 2008
+                  | et 
+                  time( datetime="2009-08-15" ) 2009
+                p
+                  | Travail d’étudiant chez 
+                  a( href="http://www.com2b.be/", rel="external" ) Com2b Networks
+                  | ( Bruxelles, Belgique )
+
+              p.description
+                | Intégration et développement AS3.
+              
+        section.col.row#programming-languages
+          h3 Langages
+          dl.content
+            dt Application
+            dd
+              | AIR 15, IOS natif (Objective-C/Swift), Electron, NW.js, PhoneGap/Cordova, C++, Qt,...
+            
+            dt Client
+            dd
+              | html5, css3, less, sass, javascript, jQuery, Ajax, jade, handelbars, json, xml,...
+            
+            dt Serveur
+            dd
+              | Nodejs (express,...), bash, PHP, MySQL, PostgreSQL, Docker, MQTT, Grunt,...
+              
+            dt Flash Platform
+            dd
+              | AS2, AS3, Flex 4.5+, Starling, Away3D, Flare3D, Alternativa3D, AMFPHP, RobotLegs, ANT,...
+              
+            dt 3D
+            dd
+              | MEL,...
+
+        section.col.row#tools
+          h3 Outils &amp; Méthodologies
+          dl.content
+            dt Adobe Creative Suite 3, 4, 5, 6, CC
+            dd
+              | Flash, Illustrator, Photoshop, Indesign, After effects, Premiere pro
+            
+            dt IDE
+            dd
+              | Xcode, Atom, Sublime Text, Eclipse, Flash Builder, Flash Develop, QtCreator,...
+            
+            dt 3D
+            dd
+              | 3DsMax, Maya, Zbrush, Nuke,...
+              
+            dt Electronique et Domotique
+            dd
+              | Eagle, Arduino, avr-dude, ino/arturo, Fritzing, Jeedom, Domoticz,...
+            
+            dt Automatisation
+            dd
+              | Hg, Git, Svn,...
+              
+            dt Méthodologies
+            dd
+              | Scrum,...
+        
+        section.col.row#languages
+          h3 Langues
+          dl.content
+            dt Français
+            dd
+              | Langue maternelle
+            
+            dt Anglais
+            dd
+              | Connaissances moyennes, compréhension à la lecture et à l'audition, maîtrise du langage technique
+              
+            dt Néérlandais
+            dd
+              | Bases
+          
+        section.col.row#systems
+          h3 Systèmes
+          dl.content
+            dt Mac OSX
+            dd
+              | 10.5, ... ,10.10 (système principal)
+            
+            dt Windows
+            dd
+              | XP, ... , 8
+              
+            dt Linux
+            dd
+              | Shell, Debian, Ubuntu, Arch Linux, Raspian,...
+        
+        section#others
+          h3 Divers
+          ol.content
+            li
+              h4 
+                | Centres d’intérêts : 
+              p Développement et électronique DIY
+              p Musique (batterie, percussions, LiveLooping).
+              p Nouvelles technologies,...
+              p Sport (fitness, course,...)
+          
+            li
+              h4 
+                | Permis de conduire
+              p Voiture Catégorie B, Trotinette Catégorie X
+            
+      footer
+        a( href="mailto:julien.delnatte@gmail.com" ) julien.delnatte@gmail.com
