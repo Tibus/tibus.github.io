@@ -62,14 +62,14 @@ footer {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background: url("curl.png"); }
   footer a {
     display: block;
     position: absolute;
-    top: 190px;
-    left: 120px;
+    top: 162px;
+    left: 82px;
     z-index: 35;
     transform: rotate(-45deg);
     color: #221555;
