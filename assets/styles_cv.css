@@ -6,7 +6,8 @@ body {
   position: relative;
   padding: 1em;
   overflow: hidden;
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  background-image: url("lightpaperfibers.png"); }
   .page::before {
     content: "";
     position: absolute;
@@ -15,8 +16,8 @@ body {
     top: -100px;
     left: -70%;
     z-index: 5;
-    background: #f7f7f7;
-    box-shadow: 0 0 10px #f7f7f7;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
     border-radius: 100%; }
 
 main {
